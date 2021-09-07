@@ -43,7 +43,7 @@ const Profile = () => {
       console.error(e);
     }
   };
-
+  
   return (
     <div>
       <div className="flex-row mb-3">
