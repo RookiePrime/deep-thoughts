@@ -20,7 +20,7 @@ app.use(express.json());
 server.start().then(res => {
   server.applyMiddleware({ app });
 
-  if (process.env.NODE_ENV === 'prduction') {
+  if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../client/build')));
   }
 
